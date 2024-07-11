@@ -1,0 +1,39 @@
+<!-- Write a script to change the content and style of a specific HTML element.  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>change content & style</title>
+    <style>
+        #Button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #476382;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        #Button:hover {
+            background-color: #1a72cf;
+        }
+    </style>
+</head>
+<body>
+    <h2 id="my">company name</h2>
+    <button id="Button">Click me</button>
+
+    <script>
+        document.getElementById("Button").addEventListener("click", () => {
+            const element = document.getElementById("my");
+            element.textContent = "Synergim / Bijli IT Solutions";
+            element.style.color = "brown";
+            element.style.fontSize = "40px";
+            element.style.backgroundColor = "lightgrey";
+            element.style.border = "2px solid black";
+            element.style.textAlign = "center";
+        });
+    </script>
+</body>
+</html>

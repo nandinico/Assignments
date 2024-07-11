@@ -1,0 +1,23 @@
+
+<!-- Add an event listener to a button that changes the text of a paragraph when clicked.  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EL</title>
+</head>
+<body>
+    <p id="myParagraph">Git is a DevOps tool used for source code management. <br>It is a free and open-source version control system used to handle small to very large projects efficiently. <br>Git is used to tracking changes in the source code, enabling multiple developers to work together on non-linear development.<br><br>The Agile methodology is a project management approach that involves breaking the project into phases and emphasizes continuous collaboration and improvement. <br>Teams follow a cycle of planning, executing, and evaluating. <br> A sprint is a short, time-boxed period when a scrum team works to complete a set amount of work. <br>Sprints are at the very heart of scrum and agile methodologies, and getting sprints right will help your agile team ship better software with fewer headaches <br> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOR0Q7AYkIv9yr74LC-HLZ0jw4lBJXJ13zNw&s" alt="sry"> </p>
+    <br>
+
+    <button id="myButton">Click me</button>
+
+    <script>
+    document.getElementById("myButton").addEventListener("click", function() 
+    {
+    document.getElementById("myParagraph").textContent = "Text has been changed!";
+    });
+</script>
+</body>
+</html>
